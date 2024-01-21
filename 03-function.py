@@ -16,14 +16,11 @@ def function_name(arg1):
 # 1 indent (4 spacebar)
 # end with return ...
 
-def add(num:int):
-# take input value as integer.
-    ret = num+1
-# add 1 to input value
+def add(num:int):# take input value as integer.
+    ret = num+1# add 1 to input value
     return ret
 
-# call function
-add(5)
+'''add(5)'''# call function 
 #output = 6
 
 
@@ -32,7 +29,7 @@ def sum_num(var1: int, var2: int) ->int:
     ret = var1 + var2
     return ret
 
-sum_num(1,4.5)
+'''sum_num(1,4.5)'''
 #output = 5.5
 
 # funtion with no input
@@ -41,14 +38,24 @@ def hello() ->None:
 hello()
 #output 'helloWorld'
 
+'''
 print(add(5))
 print(sum_num(1,2))
 print(hello)
+'''
 
 def add_then_sum_itself_then_hello(num: int) ->int:
-    ret = add(2)
+    ret = add(1)
     ret = sum_num(ret,num)
     hello()
-print(add_then_sum_itself_then_hello(5))
+    return ret
+print("add_then_sum_itself_then_hello(5):")
+
 my_result = add_then_sum_itself_then_hello(5)
 print(my_result)
+
+'''
+output
+helloWorld
+7
+'''
