@@ -45,17 +45,31 @@ print(hello)
 '''
 
 def add_then_sum_itself_then_hello(num: int) ->int:
-    ret = add(1)
-    ret = sum_num(ret,num)
+    ret = add(1) 
+    '''take value and process to def add'''
+    ret = sum_num(ret,num) 
+    '''get ret value from def add then go to def sum_num'''
     hello()
     return ret
-print("add_then_sum_itself_then_hello(5):")
+'''print("add_then_sum_itself_then_hello(5):")'''
 
 my_result = add_then_sum_itself_then_hello(5)
 print(my_result)
 
 '''
+refer 5 as num value to def add_then_sum_itself_then_hello.
+
+ret = add (1) 
+    output =2 because add(1) mean use num=1 + 1 in def add.
+
+ret = sum_num(ret,num)
+    then process ret again with sum_num(ret=2,5) in def sum_num(2,5)
+    output = 7
+return ret = 7
+then print hello() and retun ret
+
 output
+helloWorld
 helloWorld
 7
 '''

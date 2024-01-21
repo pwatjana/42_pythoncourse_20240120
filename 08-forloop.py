@@ -1,4 +1,16 @@
 NUMS = [1,2,3,4,5]
+'''creat a lists use [] 
+list can store any data type
+
+
+call item in list 
+list    [1,2,3,4]
+index    0,1,2,3
+
+NUMS[0] > output 1
+NUMS[-1] > output 5
+'''
+
 
 for num in NUMS:
     print(num)

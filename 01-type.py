@@ -17,5 +17,8 @@ type("9")
 type("nine0")
 #<class 'str'>#
 
+a = 1
+b = 2
+c = 1
 type(a>b or a>c)
 #<class 'bool'>

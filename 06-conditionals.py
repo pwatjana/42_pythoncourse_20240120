@@ -1,5 +1,5 @@
-"""#flow control
-
+'''
+#flow control
 #ticket price based on age
 
 ADULT_AGE = 18
@@ -7,14 +7,13 @@ SENIOR_AGE = 65
 age = input("How old are you: ")
 age = int(age)
 
-'''
 if condition1 :
     # if condition 1 do this
 elif condition2:
     # if condition 2 do this
 else :
-    # if non do this. optional
-"""
+    # if non do this. optional . no need condition.
+'''
 
 ADULT_AGE = 18
 SENIOR_AGE = 65
