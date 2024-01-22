@@ -22,3 +22,17 @@ b = 2
 c = 1
 type(a>b or a>c)
 #<class 'bool'>
+
+import random
+hand = random.choices(["rock", "paper", "scissor"])
+print(hand)
+print(type(hand))
+#output 1st time > ['paper']
+#output <class 'list'>
+
+import random
+hand = random.choices(["rock", "paper", "scissor"])[0]
+print(hand)
+print(type(hand))
+#output 1st time > scissor
+#<class 'str'>
