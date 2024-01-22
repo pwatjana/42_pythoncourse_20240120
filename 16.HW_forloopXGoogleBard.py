@@ -1,19 +1,24 @@
 
-from rich import print
+#from rich import print
 import random
 
 win = 0
 
 for i in range(1,4):
 
+    user1 = input("type here :")
+
+    #Check user input , if not r,s,p warning with text.
+    list_1 = ['r', 's', 'p']
+    while  user1 not in list_1:
+        print("Invalid Input! Please type r/p/s for rock/paper/scissor")
+        break
+    # computer random word from list.
     hand = random.choices(["rock", "paper", "scissor"])[0]
     #print(type(hand))
     print(("Computer choose:", hand))
-    user1 = input("type here :")
-    list_1 = ['r', 's', 'p']
-    if user1 not in list_1:
-        print("Invalid Input! Please type r/p/s for rock/paper/scissor")
-
+    
+    #Compare user input and computer choice.
     if hand == "rock" and user1 =='p':
         win += 1
     elif hand == "scissor" and user1 == 'r':
