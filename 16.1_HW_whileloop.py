@@ -12,7 +12,7 @@
 
 
 """
-from rich import print
+#from rich import print
 import random
 
 num=0
