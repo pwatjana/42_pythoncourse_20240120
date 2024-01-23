@@ -7,25 +7,29 @@
     input r,s,p
     report score
 """
+
+# random pick items in lists and return first arg of the list.
+# return random value.
 def random():
-    from rich import print
+    #from rich import print
     import random
     hand = random.choices(["rock", "scissor", "paper"])[0]
     print(hand)
 random()
 
+# count round 
 def count(round: int):
-    round = 0
+    count = 0
     while round < 3:
         print(round)
         round = round+1
-        if round == 3:
-            break
-    print("End 3 round")
-count(round)
+    print("End game : your score = ")
 
+
+# determine winner and count win round
 def win(hand,user1):
-    num=0
+    num=0 # initial score start 0
+    # winning conditions
     if hand == 'rock' and user1 == 'p':
         num +=1
     elif hand == 'paper' and user1 == 's':
@@ -33,17 +37,22 @@ def win(hand,user1):
     elif hand == 'scissor' and user1 == 'r':
         num +=1  
     print(num)
+    return num
 
 
-my_list = ['r','s','p']
+def user1():
+    my_list = ['r','s','p']
+    if user1 not in my_list:
+        print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
+        
 
 
 
 def main():
-    count(0)
     user1 = input("Choose only one> r, s, p: ")
-    win(random(),user1())
-    print(win)
+    print("Computer choose : ", random)
+
+
 if __name__ == "__main__":
     main()
 
