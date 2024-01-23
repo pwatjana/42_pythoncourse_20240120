@@ -12,7 +12,7 @@ for i in range(1,4):
     #Check user input , if not r,s,p warning with text.
     list_1 = ['r', 's', 'p']
     while  user1 not in list_1:
-        print("Invalid Input! Please type r/p/s for rock/paper/scissor")
+        print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
         break
 
     # computer random word from list.
