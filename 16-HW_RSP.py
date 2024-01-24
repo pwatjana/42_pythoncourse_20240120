@@ -11,7 +11,7 @@
 # random pick items in lists and return first arg of the list.
 # return random value.
 def random():
-    from rich import print
+    #from rich import print
     import random
     hand = random.choices(["rock", "scissor", "paper"])
     print(hand)
@@ -44,14 +44,13 @@ def user1(type):
     if user1 not in my_list:
         print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
     else:
-        return 
-        
+        win()
 
 
 
 def main():
     hand = random    
-    user_choose = input("Enter your choice (r/p/s for rock/paper/) : ")
+    user_choose = input("Enter your choice (r/p/s for rock/paper/scisssor) : ")
     user1(user_choose)
     win(hand,user1)
 
