@@ -28,6 +28,12 @@ def count(round: int):
 
 # determine winner and count win round
 def win(hand,user1):
+    round = 0
+    while round < 3:
+        round = round+1
+        print("Round ", round)
+        break
+        
     num=0 # initial score start 0
     while num ==2 :
         break
@@ -42,16 +48,16 @@ def win(hand,user1):
     print("End game : your score = ", num)
 
 
+
 def user1(type):
     my_list = ['r','s','p']
     if user1 not in my_list:
-        print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
+        win(random,user1)      
     else:
-        user1()
+        print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
 
 
 def main():
-    count(0)
     hand = random    
     user_choose = input("Enter your choice (r/p/s for rock/paper/scisssor) : ")
     user1(user_choose)

@@ -4,7 +4,7 @@
 import random
 
 win = 0
-
+loss=0
 for i in range(1,4):
 
     user1 = input("type here :")
@@ -13,7 +13,8 @@ for i in range(1,4):
     list_1 = ['r', 's', 'p']
     while  user1 not in list_1:
         print("You lose! Invalid Input. Please type r/p/s for rock/paper/scissor")
-        break
+        user1 = input("type here :")
+        
 
     # computer random word from list.
     hand = random.choices(["rock", "paper", "scissor"])[0]
@@ -23,15 +24,21 @@ for i in range(1,4):
     #Compare user input and computer choice and  collect score.
     if hand == "rock" and user1 =='p':
         win += 1
+        loss += 1
     elif hand == "scissor" and user1 == 'r':
         win += 1
+        loss += 1
     elif hand == "paper" and user1 == 's':
-        win += 1    
+        win += 1
+        loss += 1    
 
+  
     #if score reach 2 end game with message.
     if win ==2:
-        break
-print("End of the game \nYou have won ", win ,"out of 3 round")
+        print("End of the game \nYou have won ", win ,"out of 3 round")
+    elif loss ==2:
+        print("End of the game \nYou have loss ", loss ,"out of 3 round")
+
 
 
 '''Googlebard -> Here's a breakdown of how it works:
