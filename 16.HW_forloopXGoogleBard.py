@@ -30,12 +30,13 @@ for i in range(1,4):
 
     elif hand == "paper" and user1 == 's':
         win += 1
+    else:
+        loss += 1
 
-  
     #if score reach 2 end game with message.
-    if win ==2:
-        print("End of the game \nYou have won ", win ,"out of 3 round")
-print("End of the game \nYou have won ", win ,"out of 3 round")
+    if win ==2 or loss ==2:
+        break
+print("End of the game \nYou score win-lose ", win ,"-", loss)
 
 '''Googlebard -> Here's a breakdown of how it works:
 random.choices(["rock", "paper", "scissor"]):
