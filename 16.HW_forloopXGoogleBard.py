@@ -1,5 +1,5 @@
 
-#round 1
+
 #from rich import print
 import random
 
@@ -24,22 +24,18 @@ for i in range(1,4):
     #Compare user input and computer choice and  collect score.
     if hand == "rock" and user1 =='p':
         win += 1
-        loss += 1
+
     elif hand == "scissor" and user1 == 'r':
         win += 1
-        loss += 1
+
     elif hand == "paper" and user1 == 's':
         win += 1
-        loss += 1    
 
   
     #if score reach 2 end game with message.
     if win ==2:
         print("End of the game \nYou have won ", win ,"out of 3 round")
-    elif loss ==2:
-        print("End of the game \nYou have loss ", loss ,"out of 3 round")
-
-
+print("End of the game \nYou have won ", win ,"out of 3 round")
 
 '''Googlebard -> Here's a breakdown of how it works:
 random.choices(["rock", "paper", "scissor"]):

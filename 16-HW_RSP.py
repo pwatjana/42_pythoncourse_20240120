@@ -18,33 +18,29 @@ def random():
 random()
 
 
-# count round 
-def count(round: int):
-     while round < 3:
-        round = round+1
-        print("Round ", round)
-        break
-        
-
 # determine winner and count win round
 def win(hand,user1):
-    round = 0
-    while round < 3:
-        round = round+1
-        print("Round ", round)
-        break
-        
+    round = 0 # initial round start 0
     num=0 # initial score start 0
     while num ==2 :
+        break
+        print("Congrats! you win 2 out of 3 round ")
+    while round ==4 :
         break
         print("Congrats! you win 2 out of 3 round ")
     # winning conditions.
     if hand == 'rock' and user1 == 'p':
         num +=1
+        round +=1
     elif hand == 'paper' and user1 == 's':
         num +=1
+        round +=1
     elif hand == 'scissor' and user1 == 'r':
-        num +=1  
+        num +=1
+        round +=1
+    else:
+        round +=1
+    
     print("End game : your score = ", num)
 
 
