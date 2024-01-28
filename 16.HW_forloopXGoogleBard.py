@@ -1,4 +1,12 @@
-
+"""
+    rock scissor paper
+    Create a rock scissor paper game
+    Player vs computer
+    3 rounds only
+    2 out of 3 wins/loss stop game
+    input r,s,p
+    report score
+"""
 
 #from rich import print
 import random
