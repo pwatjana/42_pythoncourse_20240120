@@ -23,5 +23,6 @@ def main():
     
 if __name__ == "__main__":
     main()
-# magic ???
+# what ever call name.py in terminal , vs will always call __main__
+    # call others first file ?
 

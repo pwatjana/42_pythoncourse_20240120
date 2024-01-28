@@ -8,6 +8,7 @@
 #     How to navigate in terminal
 #     PWD = check current path  
 #     ls  - list all files and folders inside a directory
+#     mkdir = create new folder >> mkdir folder name
 #     CD [folder name] = change directory 
 #     CD .. to change the current working directory in various operating systems
 #     >notice change of work path end with select directory
