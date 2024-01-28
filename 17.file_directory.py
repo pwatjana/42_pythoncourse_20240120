@@ -44,8 +44,9 @@ for file in files:
 print("size_in_bytes :" , size_in_bytes)
 
 '''
-1 char = 1 bit
+1 char ~ 1 byte
 8 bit = 1 byte
+1M char = 1mb
 '''
 
 """
